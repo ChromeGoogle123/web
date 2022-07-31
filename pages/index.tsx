@@ -59,7 +59,7 @@ function HomePage() {
         }}
         onClick={() => alert('yayayayayayayayayayayayayayayayayayayayayayayayaya')}
       >
-        Spammer 2
+        Spammer 3
         
       </button>
       
@@ -76,7 +76,9 @@ function HomePage() {
           let name = prompt("What's your name?");
           if (name) {
             var changed_name = document.querySelector("#switcher")
-            changed_name.innerHTML = name + "'s website"
+            if (changed_name!==null){
+              changed_name.innerHTML = name + "'s website"
+            }
             
           } else {
             alert('Nice to meet you, stranger');
@@ -99,7 +101,9 @@ function HomePage() {
         onClick={() => {
           let fav_color = prompt("What's your favorite color?");
           let ranibowbutt = document.querySelector("#rainbowbutt")
-          ranibowbutt.style.color = fav_color
+          if (ranibowbutt!==null){
+            ranibowbutt.style.color = fav_color
+          }
 
         }}
       >
