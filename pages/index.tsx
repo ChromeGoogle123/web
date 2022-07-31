@@ -87,28 +87,6 @@ function HomePage() {
       >
         {"Enter your name please!"}
       </button>
-      
-      <button
-        id = "rainbowbutt"
-        style={{
-          fontFamily: 'cursive',
-          padding: '1rem',
-          fontSize: '2rem',
-          background: 'orange',
-          color: 'white',
-          marginTop: '2rem'
-        }}
-        onClick={() => {
-          let fav_color = prompt("What's your favorite color?");
-          const ranibowbutt = document.querySelector("#rainbowbutt")
-          if (ranibowbutt!=null){
-            ranibowbutt.style.color = fav_color;
-          }
-
-        }}
-      >
-        {"Enter your favorite color!!!"}
-      </button>
 
       
     </div>
