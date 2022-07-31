@@ -101,13 +101,13 @@ function HomePage() {
         onClick={() => {
           let fav_color = prompt("What's your favorite color?");
           const ranibowbutt = document.querySelector("#rainbowbutt")
-          if (ranibowbutt!==null){
-            ranibowbutt.style.color = fav_color
+          if (ranibowbutt!=null){
+            ranibowbutt.style.color = fav_color;
           }
 
         }}
       >
-        {"Enter your favorite color!!"}
+        {"Enter your favorite color!!!"}
       </button>
 
       
