@@ -9,7 +9,7 @@ function HomePage() {
         alignItems: 'center'
       }}
     >
-      <h1 style={{ fontFamily: 'fantasy', color: '#4b9be1' }}>
+      <h1 id="switcher" style={{ fontFamily: 'fantasy', color: '#4b9be1' }}>
         {"MaxiKim's website"}
       </h1>
       <h2
@@ -19,7 +19,7 @@ function HomePage() {
           marginBottom: '10rem'
         }}
       >
-        click the buttons below
+        click some spams or tell us your name
       </h2>
       <button
         style={{
@@ -32,10 +32,40 @@ function HomePage() {
         onClick={() => alert('ggggggggggggggggggggggggggggggggg')}
       >
         Spammer
+        
       </button>
+      
       <button
         style={{
           fontFamily: 'monospace',
+          padding: '1rem',
+          fontSize: '2rem',
+          background: 'blue',
+          color: 'white'
+        }}
+        onClick={() => alert('duckduckduckduckduckduckduckduckduckduckduckduck')}
+      >
+        Spammer 2
+        
+      </button>
+
+            <button
+        style={{
+          fontFamily: 'monospace',
+          padding: '1rem',
+          fontSize: '2rem',
+          background: 'blue',
+          color: 'white'
+        }}
+        onClick={() => alert('yayayayayayayayayayayayayayayayayayayayayayayayaya')}
+      >
+        Spammer 2
+        
+      </button>
+      
+      <button
+        style={{
+          fontFamily: 'cursive',
           padding: '1rem',
           fontSize: '2rem',
           background: 'orange',
@@ -45,14 +75,38 @@ function HomePage() {
         onClick={() => {
           let name = prompt("What's your name?");
           if (name) {
-            alert('Nice to meet you, ' + name + '!');
+            var changed_name = document.querySelector("#switcher")
+            changed_name.innerHTML = name + "'s website"
+            
           } else {
             alert('Nice to meet you, stranger');
           }
         }}
       >
-        {"What's your name?"}
+        {"Enter your name please!"}
       </button>
+      
+      <button
+        id = "rainbowbutt"
+        style={{
+          fontFamily: 'cursive',
+          padding: '1rem',
+          fontSize: '2rem',
+          background: 'orange',
+          color: 'white',
+          marginTop: '2rem'
+        }}
+        onClick={() => {
+          let fav_color = prompt("What's your favorite color?");
+          let ranibowbutt = document.querySelector("#rainbowbutt")
+          ranibowbutt.style.color = fav_color
+
+        }}
+      >
+        {"Enter your favorite color!"}
+      </button>
+
+      
     </div>
   );
 }
